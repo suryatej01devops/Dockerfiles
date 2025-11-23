@@ -1,2 +1,3 @@
-FROM run:v1 #checks in local image is exit or not and then dearch from docker hub
+FROM almalinux:9
+RUN dnf install nginx -y
 CMD ["nginx", "-g", "daemon off;"]
